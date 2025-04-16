@@ -1,0 +1,37 @@
+package edu.uom.labbak.controller;
+
+import edu.uom.labbak.dto.AuthRequestDTO;
+import edu.uom.labbak.dto.AuthResponseDTO;
+import edu.uom.labbak.dto.RegisterRequestDTO;
+import edu.uom.labbak.dto.UserDTO;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/auth")
+public class AuthController {
+
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponseDTO> login(@RequestBody AuthRequestDTO authRequest) {
+        return null;
+        // Authentication logic
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<UserDTO> register(@RequestBody RegisterRequestDTO registerRequest) {
+        return null;
+        // Registration logic
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<Void> logout() {
+        return null;
+        // Logout logic
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<UserDTO> getCurrentUser() {
+        return null;
+        // Get current user logic
+    }
+}

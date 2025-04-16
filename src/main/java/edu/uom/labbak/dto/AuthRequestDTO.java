@@ -1,0 +1,12 @@
+package edu.uom.labbak.dto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthRequestDTO {
+    private String email;
+    private String password;
+}
